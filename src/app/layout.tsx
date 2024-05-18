@@ -45,7 +45,7 @@ function SideMenu() {
                 Gallery
               </Link>
             </Button>
-            {/* <Button
+            <Button
               asChild
               variant="ghost"
               className="w-full justify-start flex gap-2"
@@ -67,7 +67,7 @@ function SideMenu() {
                 </svg>
                 Albums
               </Link>
-            </Button> */}
+            </Button>
             <Button
               asChild
               variant="ghost"

@@ -13,13 +13,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FolderPlus } from "lucide-react";
 import { useState } from "react";
+import { addImageToAlbum } from "./actions";
 
 export function AddToAlbumDialog({image}: {image: SearchResult}) {
-
+  const [open, setOpen] = useState(false);
   const [albumName, setAlbumName] = useState("");
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="ghost">
           <FolderPlus className="w-4 h-4 mr-2" />
@@ -47,9 +48,10 @@ export function AddToAlbumDialog({image}: {image: SearchResult}) {
           </div>
         </div>
         <DialogFooter>
-          <Button onClick={() => {
-            console.log("HIFHDasfhdlfaks")
-            console.log(image);
+          <Button onClick={async () => {
+            await addImageToAlbum(image, albumName);
+            setOpen(false);
+            setAlbumName("");
           }} type="submit">Add to Album</Button>
         </DialogFooter>
       </DialogContent>
