@@ -118,7 +118,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="border-b">
           <div className="flex h-16 items-center px-4 container mx-auto">
-            PHOTO SHOP
+          <Link href="/">PHOTO SHOP</Link>
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
                 <AvatarImage src="https://github.com/shadcn.png" />
