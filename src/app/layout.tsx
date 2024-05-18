@@ -4,6 +4,7 @@ import "./globals.css";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Heart } from "@/components/icons/heart";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +45,7 @@ function SideMenu() {
                 Gallery
               </Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               variant="ghost"
               className="w-full justify-start flex gap-2"
@@ -65,6 +66,16 @@ function SideMenu() {
                   />
                 </svg>
                 Albums
+              </Link>
+            </Button> */}
+            <Button
+              asChild
+              variant="ghost"
+              className="w-full justify-start flex gap-2"
+            >
+              <Link href="/favorites">
+                <Heart />
+                Favorites
               </Link>
             </Button>
             
