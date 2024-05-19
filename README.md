@@ -1,4 +1,4 @@
-# 🖼️ My Image Gallery Project
+# 🖼️ Photo Shop Project
 
 Welcome to My Image Gallery Project! This project allows users to upload images from various sources like their device, web addresses, cameras, Google Drive, Dropbox, Shutterstock, Getty Images, iStock, and Unsplash. The uploaded images are stored securely on Cloudinary.
 
