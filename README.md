@@ -40,6 +40,3 @@ Check out the live demo of the project [here](https://cloudinary-image-editor.ve
 2. Install dependencies using `npm install`.
 3. Configure Cloudinary credentials.
 4. Start the development server using `npm run dev`.
-
-## 🤝 Contributions
-Contributions are welcome! If you have any suggestions, feature requests, or bug reports, feel free to open an issue or submit a pull request.
